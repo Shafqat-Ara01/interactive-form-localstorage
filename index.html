@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2>Interactive Form</h2>
+      <button id="modeBtn"><i class="fa-solid fa-sun icon"></i></button>
+    </header>
+    <main class="main-section">
+      <h1>Client-Side Data Persistence with LocalStorage</h1>
+      <p>This mini project stores and restores form values automatically.</p>
+
+      <form class="contactForm">
+        <h2>Data Entry Panel</h2>
+        <div class="userName">
+          <div class="firstName">
+            <label for="firstNameInput">First Name:</label>
+            <input type="text" name="firstNameInput" id="firstNameInput" />
+          </div>
+
+          <div class="lastName">
+            <label for="lastNameInput">Last Name:</label
+            ><input type="text" name="lastNameInput" id="lastNameInput" />
+          </div>
+        </div>
+        <div class="email">
+          <label for="emailInput">Email Address:</label>
+          <input type="email" name="email" id="emailInput" required/>
+        </div>
+
+        <div class="Query">
+          <label>Query Type:</label>
+          <div class="query-type">
+            <div class="generalQuery">
+              <input
+                type="radio"
+                name="queryType"
+                value="General Enquiry"
+                id="generalEnquiry"
+              />
+              <label for="generalEnquiry">General Enquiry</label>
+            </div>
+            <div class="supportRequest">
+              <input
+                type="radio"
+                id="supportRequest"
+                name="queryType"
+                value="Support Request"
+              />
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+        </div>
+        <div class="message">
+          <label for="messageText">Message:</label>
+          <textarea name="" id="messageInput" rows="5"></textarea>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="agree" name="agree" />
+          <label for="checkbox"
+            >I consent to being contacted by the team
+          </label>
+        </div>
+        <button class="submitBtn" type="submit">Submit</button>
+      </form>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
